@@ -2,17 +2,17 @@ import Models.Operadores;
 import java.util.Scanner;
 
 public class Main {
-    public static void funcao_teste (){
+    public static void main(String[] args) throws Exception{
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite o primeiro número: ");
+        System.out.print("Digite o primeiro número: ");
         float v1 = scanner.nextFloat();
-        System.out.println("Digite o segundo numero: ");
+        System.out.print("Digite o segundo numero: ");
         float v2 = scanner.nextFloat();
 
         Operadores ops = new Operadores(v1,v2);
 
-        System.out.println("Digite a operação (1- adição, 2- subtração, 3- multiplicação e 4- divisão ");
+        System.out.println("Digite a operação:\n(1- adição, 2- subtração, 3- multiplicação e 4- divisão) ");
         int operacao = scanner.nextInt();
 
         switch (operacao){
